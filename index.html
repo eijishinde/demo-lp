@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>採用説明会 参加受付中｜株式会社サンプル製作所</title>
+<meta name="description" content="株式会社サンプル製作所の若手採用説明会。未経験からものづくりのプロへ。金沢で働く仲間を募集しています。">
+<!--
+  ブレイクポイント: 768px / 1024px(モバイルファースト・基準375px)
+  使用フォント: Noto Sans JP(Google Fonts)
+  依存ライブラリ: なし(HTML/CSS/JSのみ)
+  セクション構成: hero / problem / reason / people / flow / faq / cta
+  ※各セクションは <section data-module="..."> で独立。追加・削除・入替はセクション単位で行う
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header__inner container">
+    <a class="header__logo" href="#top">株式会社サンプル製作所<span class="header__logo-sub">RECRUIT</span></a>
+    <button class="header__toggle" aria-expanded="false" aria-controls="global-nav" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+    <nav class="header__nav" id="global-nav">
+      <ul class="header__list">
+        <li><a href="#reason">選ばれる理由</a></li>
+        <li><a href="#people">働く人</a></li>
+        <li><a href="#flow">応募の流れ</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a class="header__cta" href="#cta">説明会に申し込む</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ 01 hero ============ -->
+<section class="hero" data-module="hero">
+  <div class="hero__inner container">
+    <div class="hero__text">
+      <p class="hero__label">2027年卒・中途 採用説明会 参加受付中</p>
+      <h1 class="hero__title">未経験から、<br>ものづくりのプロへ。</h1>
+      <p class="hero__lead">創業52年の技術を、次のあなたへ。<br>金沢で働く仲間を募集しています。</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary btn--lg" href="#cta">説明会に申し込む<img src="assets/icons/arrow-right.svg" alt="" width="20" height="20" class="btn__icon"></a>
+        <a class="btn btn--ghost" href="#reason">まずは会社を知る</a>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <img src="assets/illustrations/hero-team.svg" alt="" width="480" height="360" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 problem ============ -->
+<section class="problem section" data-module="problem">
+  <div class="container">
+    <h2 class="section__title">こんな気持ち、ありませんか？</h2>
+    <ul class="problem__list">
+      <li class="problem__item">
+        <img src="assets/icons/circle-help.svg" alt="" width="28" height="28" class="problem__icon">
+        <p>手に職をつけたいけれど、<br>未経験でもできるか不安</p>
+      </li>
+      <li class="problem__item">
+        <img src="assets/icons/house.svg" alt="" width="28" height="28" class="problem__icon">
+        <p>地元・金沢で、<br>腰を据えて働きたい</p>
+      </li>
+      <li class="problem__item">
+        <img src="assets/icons/users.svg" alt="" width="28" height="28" class="problem__icon">
+        <p>職場の雰囲気や人間関係を<br>入社前に知りたい</p>
+      </li>
+    </ul>
+    <p class="problem__answer">その気持ち、まずは<strong>説明会で確かめてください</strong>。</p>
+  </div>
+</section>
+
+<!-- ============ 03 reason ============ -->
+<section class="reason section" id="reason" data-module="reason">
+  <div class="container">
+    <h2 class="section__title">サンプル製作所が選ばれる理由</h2>
+    <div class="reason__grid">
+      <article class="reason__card">
+        <img src="assets/icons/graduation-cap.svg" alt="" width="36" height="36" class="reason__icon">
+        <p class="reason__num">研修<span>6か月</span></p>
+        <h3 class="reason__heading">未経験前提の育成制度</h3>
+        <p class="reason__text">入社者の7割が未経験スタート。専属の先輩がつくOJTと段階式の技能研修で、半年で一人前の第一歩へ。</p>
+      </article>
+      <article class="reason__card">
+        <img src="assets/icons/clock.svg" alt="" width="36" height="36" class="reason__icon">
+        <p class="reason__num">残業<span>月平均8h</span></p>
+        <h3 class="reason__heading">無理なく続けられる働き方</h3>
+        <p class="reason__text">計画生産で繁忙の波を平準化。年間休日115日、有休取得率82%。長く働ける環境を整えています。</p>
+      </article>
+      <article class="reason__card">
+        <img src="assets/icons/trending-up.svg" alt="" width="36" height="36" class="reason__icon">
+        <p class="reason__num">定着率<span>93%</span></p>
+        <h3 class="reason__heading">辞めない職場</h3>
+        <p class="reason__text">直近3年の若手定着率は93%。資格取得支援(費用全額会社負担)でキャリアの階段を一緒に登ります。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 people ============ -->
+<section class="people section" id="people" data-module="people">
+  <div class="container">
+    <h2 class="section__title">働く人を知る</h2>
+    <div class="people__row">
+      <div class="people__visual">
+        <img src="assets/illustrations/people-work.svg" alt="" width="480" height="360" loading="lazy">
+      </div>
+      <div class="people__body">
+        <p class="people__quote">「図面通りに削れた日の達成感は、ゲームのレベルアップに近いです」</p>
+        <p class="people__profile">製造部・入社3年目(前職:飲食)</p>
+        <dl class="people__day">
+          <div class="people__day-item"><dt>8:00</dt><dd>朝礼・当日の段取り確認</dd></div>
+          <div class="people__day-item"><dt>8:30</dt><dd>機械オペレーション・加工</dd></div>
+          <div class="people__day-item"><dt>12:00</dt><dd>昼休憩(社食あり)</dd></div>
+          <div class="people__day-item"><dt>15:00</dt><dd>検品・翌日の準備</dd></div>
+          <div class="people__day-item"><dt>17:30</dt><dd>退勤(残業ほぼなし)</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 flow ============ -->
+<section class="flow section" id="flow" data-module="flow">
+  <div class="container">
+    <h2 class="section__title">応募の流れ</h2>
+    <ol class="flow__steps">
+      <li class="flow__step">
+        <span class="flow__step-num">STEP 1</span>
+        <img src="assets/icons/clipboard-list.svg" alt="" width="32" height="32" class="flow__icon">
+        <h3 class="flow__heading">説明会に申し込む</h3>
+        <p class="flow__text">下のフォームから1分で完了</p>
+      </li>
+      <li class="flow__step">
+        <span class="flow__step-num">STEP 2</span>
+        <img src="assets/icons/building-2.svg" alt="" width="32" height="32" class="flow__icon">
+        <h3 class="flow__heading">会社見学・説明会</h3>
+        <p class="flow__text">工場と職場の雰囲気を見学</p>
+      </li>
+      <li class="flow__step">
+        <span class="flow__step-num">STEP 3</span>
+        <img src="assets/icons/message-circle.svg" alt="" width="32" height="32" class="flow__icon">
+        <h3 class="flow__heading">面談</h3>
+        <p class="flow__text">面接というより対話です</p>
+      </li>
+      <li class="flow__step">
+        <span class="flow__step-num">STEP 4</span>
+        <img src="assets/icons/handshake.svg" alt="" width="32" height="32" class="flow__icon">
+        <h3 class="flow__heading">内定・入社</h3>
+        <p class="flow__text">最短2週間で入社可能</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ 06 faq ============ -->
+<section class="faq section" id="faq" data-module="faq">
+  <div class="container">
+    <h2 class="section__title">よくある質問</h2>
+    <div class="faq__list">
+      <details class="faq__item">
+        <summary class="faq__q">本当に未経験でも大丈夫ですか？</summary>
+        <p class="faq__a">はい。現在活躍中の社員の7割が未経験入社です。6か月の研修期間中は先輩が専属でつき、できることから段階的に担当します。</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">説明会に参加したら、応募しないといけませんか？</summary>
+        <p class="faq__a">いいえ。説明会は「会社を知る場」です。参加後に応募するかどうかはご自身で決めていただけます。参加のみの方も歓迎です。</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">服装や持ち物はありますか？</summary>
+        <p class="faq__a">服装は自由、手ぶらでお越しください。工場見学がありますので、歩きやすい靴がおすすめです。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 cta ============ -->
+<section class="cta section" id="cta" data-module="cta">
+  <div class="container">
+    <div class="cta__box">
+      <div class="cta__visual">
+        <img src="assets/illustrations/cta-join.svg" alt="" width="480" height="360" loading="lazy">
+      </div>
+      <div class="cta__body">
+        <h2 class="cta__title">まずは、見に来てください。</h2>
+        <p class="cta__lead">毎月第2・第4土曜開催／所要90分／オンライン参加可</p>
+        <a class="btn btn--primary btn--lg" href="#" aria-disabled="true">説明会に申し込む<img src="assets/icons/arrow-right.svg" alt="" width="20" height="20" class="btn__icon"></a>
+        <p class="cta__note">※ 申込フォームは本番公開時に設置します(確認用ページのため無効)</p>
+      </div>
+    </div>
+    <div class="cta__company">
+      <h3 class="cta__company-heading">会社概要</h3>
+      <dl class="cta__company-list">
+        <div><dt>社名</dt><dd>株式会社サンプル製作所</dd></div>
+        <div><dt>所在地</dt><dd>石川県金沢市◯◯町1-2-3</dd></div>
+        <div><dt>事業内容</dt><dd>精密部品の設計・製造</dd></div>
+        <div><dt>従業員数</dt><dd>48名(平均年齢34歳)</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer__copy">&copy; SAMPLE SEISAKUSHO Inc. All rights reserved.</p>
+    <p class="footer__note">本ページはワークショップ用のサンプルです。記載の社名・数値はすべて架空のものです。</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="歓迎する人々のイラスト">
+  <circle cx="240" cy="185" r="150" fill="#E8EDF6"/>
+  <circle cx="175" cy="165" r="22" fill="#1F2937"/>
+  <circle cx="175" cy="171" r="15" fill="#F6C89F"/>
+  <path d="M143 275 q4 -58 32 -58 q28 0 32 58 z" fill="#2563EB"/>
+  <path d="M150 205 q-18 -18 -10 -38" stroke="#F6C89F" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <circle cx="305" cy="165" r="22" fill="#1F2937"/>
+  <circle cx="305" cy="171" r="15" fill="#F6C89F"/>
+  <path d="M273 275 q4 -58 32 -58 q28 0 32 58 z" fill="#1F2937"/>
+  <path d="M330 205 q18 -18 10 -38" stroke="#F6C89F" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M240 85 l7 14 15 2 -11 11 3 15 -14 -7 -14 7 3 -15 -11 -11 15 -2 z" fill="#2563EB"/>
+  <circle cx="140" cy="100" r="6" fill="#2563EB" opacity=".4"/>
+  <circle cx="352" cy="105" r="8" fill="#2563EB" opacity=".4"/>
+</svg>

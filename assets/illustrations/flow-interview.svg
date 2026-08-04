@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="面談する二人のイラスト">
+  <circle cx="240" cy="185" r="150" fill="#E8EDF6"/>
+  <rect x="185" y="215" width="110" height="12" rx="6" fill="#1F2937"/>
+  <circle cx="160" cy="160" r="22" fill="#1F2937"/>
+  <circle cx="160" cy="166" r="15" fill="#F6C89F"/>
+  <path d="M128 260 q4 -55 32 -55 q28 0 32 55 z" fill="#2563EB"/>
+  <circle cx="320" cy="160" r="22" fill="#1F2937"/>
+  <circle cx="320" cy="166" r="15" fill="#F6C89F"/>
+  <path d="M288 260 q4 -55 32 -55 q28 0 32 55 z" fill="#1F2937"/>
+  <rect x="205" y="95" width="70" height="46" rx="12" fill="#2563EB"/>
+  <path d="M228 141 l6 12 l10 -12 z" fill="#2563EB"/>
+  <rect x="218" y="109" width="44" height="6" rx="3" fill="#FFFFFF"/>
+  <rect x="218" y="121" width="30" height="6" rx="3" fill="#FFFFFF" opacity=".7"/>
+</svg>

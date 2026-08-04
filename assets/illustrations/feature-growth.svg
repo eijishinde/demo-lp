@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="成長を表すグラフと人物のイラスト">
+  <circle cx="240" cy="185" r="150" fill="#E8EDF6"/>
+  <rect x="140" y="230" width="40" height="60" rx="6" fill="#CBD5E1"/>
+  <rect x="200" y="195" width="40" height="95" rx="6" fill="#93B4F5"/>
+  <rect x="260" y="155" width="40" height="135" rx="6" fill="#2563EB"/>
+  <path d="M130 190 L215 150 L275 115 L345 80" stroke="#1F2937" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M320 80 h25 v25" stroke="#1F2937" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="368" cy="215" r="20" fill="#1F2937"/>
+  <circle cx="368" cy="221" r="14" fill="#F6C89F"/>
+  <path d="M340 300 q0 -50 28 -50 q28 0 28 50 z" fill="#2563EB"/>
+  <circle cx="120" cy="110" r="7" fill="#2563EB" opacity=".35"/>
+</svg>
