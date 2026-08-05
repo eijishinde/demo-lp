@@ -3,315 +3,183 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>採用ブランディング｜株式会社サンプル製作所</title>
-<meta name="description" content="「選ばれる会社」になるための採用ブランディング。戦略立案から採用サイト制作、運用・分析までを一貫して支援します。">
-<!--
-  ブレイクポイント: 768px / 1024px(モバイルファースト・基準375px)
-  使用フォント: Noto Sans JP(Google Fonts)
-  依存ライブラリ: なし(HTML/CSS/JSのみ)
-  セクション: hero / problem / why / merit / cta-band / strength / plan / flow / download / column / cta / footer
-  ※各 <section data-module="..."> は独立。追加・削除・入替はセクション単位で行う
--->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<title>採用サイト｜SAMPLE INC.</title>
+<meta name="description" content="SAMPLE INC. 採用サイト。未来を、自分の手でつくる。私たちと、まだ見ぬミライへ挑戦する仲間を募集しています。">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="header">
-  <div class="header__inner">
-    <a class="header__logo" href="#top">
-      <span class="header__logo-main">サンプル製作所</span>
-      <span class="header__logo-sub">採用ブランディング</span>
+<header class="hdr">
+  <div class="hdr__left">
+    <a class="hdr__logo" href="#top">
+      <svg class="hdr__mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M29 11a12 12 0 1 0 0 18" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M20 4v14" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>
+      <span class="hdr__name">SAMPLE INC.</span>
     </a>
-    <button class="header__toggle" aria-expanded="false" aria-controls="gnav" aria-label="メニューを開く"><span></span><span></span><span></span></button>
-    <nav class="header__nav" id="gnav">
-      <ul class="header__list">
-        <li><a href="#why">必要な理由</a></li>
-        <li><a href="#strength">私たちの強み</a></li>
-        <li><a href="#plan">プラン</a></li>
-        <li><a href="#flow">ご相談の流れ</a></li>
-        <li><a class="header__cta" href="#cta">お問い合わせ</a></li>
-      </ul>
-    </nav>
+    <span class="hdr__sub">採用サイト</span>
   </div>
+  <button class="hdr__toggle" aria-expanded="false" aria-controls="gnav" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+  <nav class="hdr__nav" id="gnav">
+    <ul class="hdr__list">
+      <li><a class="is-current" href="#top">トップ</a></li>
+      <li><a href="#business">仕事を知る</a></li>
+      <li><a href="#people">人を知る</a></li>
+      <li><a href="#env">働く環境</a></li>
+      <li><a href="#entry">募集職種</a></li>
+    </ul>
+  </nav>
+  <a class="hdr__entry" href="#entry">エントリー<span class="hdr__entry-arrow" aria-hidden="true">→</span></a>
 </header>
 
 <main id="top">
 
-<!-- ============ hero ============ -->
-<section class="hero" data-module="hero">
-  <div class="hero__inner">
-    <div class="hero__text">
-      <p class="hero__eyebrow">中小企業が「選ばれる会社」になるために</p>
-      <h1 class="hero__title">採用ブランディング<br class="u-sp-only">で、<br>母集団の質を変える。</h1>
-      <p class="hero__lead">戦略立案から採用サイト制作、公開後の運用・分析まで。<br class="u-pc-only">貴社の採用活動をマーケティングの発想で支援します。</p>
-      <div class="hero__actions">
-        <a class="btn btn--cta btn--lg" href="#download">
-          <img src="assets/icons/book-open.svg" alt="" width="20" height="20" class="btn__icon">資料をダウンロード
-        </a>
-        <a class="btn btn--outline-light btn--lg" href="#cta">お問い合わせ</a>
-      </div>
-      <p class="hero__note">＼ 3分で分かる資料を無料で配布中 ／</p>
-    </div>
-    <div class="hero__visual">
-      <img src="assets/illustrations/hero-interview.svg" alt="" width="560" height="420" fetchpriority="high">
-      <span class="hero__chip hero__chip--1"><img src="assets/icons/trending-up.svg" alt="" width="16" height="16">認知拡大</span>
-      <span class="hero__chip hero__chip--2"><img src="assets/icons/users.svg" alt="" width="16" height="16">応募増加</span>
-      <span class="hero__chip hero__chip--3"><img src="assets/icons/heart.svg" alt="" width="16" height="16">定着率向上</span>
-    </div>
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero__media">
+    <img src="assets/img/hero.svg" alt="" fetchpriority="high">
+  </div>
+  <div class="hero__body">
+    <h1 class="hero__title">未来を、<br>自分の手でつくる。</h1>
+    <p class="hero__lead">ダミーテキストがここに入ります。<br>私たちと、まだ見ぬミライへ挑戦する仲間とともに、<br>新しい価値を生み出していきます。</p>
+  </div>
+  <span class="hero__scroll" aria-hidden="true">SCROLL</span>
+</section>
+
+<!-- ===== MESSAGE ===== -->
+<section class="msg">
+  <div class="msg__inner">
+    <p class="msg__text">ダミーテキストがここに入ります。私たちは、<br>一人ひとりがアイデアと情熱を、社会や人の喜ぶことに注いでいます。<br>一人ひとりが、変革の原動力です。<br>新しい未来に向かって挑戦し、前進を。</p>
+    <h2 class="msg__title">挑戦が、<br>誰かの明日を<br>つくっていく。</h2>
   </div>
 </section>
 
-<!-- ============ problem ============ -->
-<section class="problem" data-module="problem">
-  <div class="container">
-    <p class="problem__head">こんな課題はありませんか？</p>
-    <div class="problem__row">
-      <div class="problem__avatar" aria-hidden="true">
-        <img src="assets/illustrations/problem-hiring.svg" alt="" width="150" height="140" loading="lazy">
-      </div>
-      <ul class="problem__list">
-        <li class="problem__item">知名度が低く、<br>求人を出しても応募が集まらない</li>
-        <li class="problem__item">採用広告が<br>ターゲット層に届いていない</li>
-        <li class="problem__item">内定辞退や早期離職が<br>毎年くり返される</li>
-      </ul>
+<!-- ===== BUSINESS ===== -->
+<section class="business" id="business">
+  <div class="business__inner">
+    <div class="business__head">
+      <p class="label"><span class="label__line" aria-hidden="true"></span>BUSINESS</p>
+      <h2 class="sec-title">事業を知る</h2>
+      <p class="sec-text">ダミーテキストがここに入ります。<br>私たちは複数の事業を展開し、<br>幅広い価値の創造を実現しています。</p>
+      <a class="more" href="#"><span class="more__circle" aria-hidden="true">→</span>詳しく見る</a>
     </div>
-  </div>
-</section>
-
-<!-- ============ why ============ -->
-<section class="why section" id="why" data-module="why">
-  <div class="container">
-    <h2 class="section__title">なぜ今、採用ブランディングが必要なのか？</h2>
-    <ol class="why__list">
-      <li class="why__item">
-        <span class="why__num">01</span>
-        <p class="why__text">労働人口が減少し、企業間で母集団の奪い合いが激化している</p>
+    <ul class="business__list">
+      <li class="business__item">
+        <img class="ico" src="assets/icons/building-2.svg" alt="" width="48" height="48">
+        <h3>ダミー事業タイトル</h3>
+        <p>ダミーテキストがここに入ります。<br>ダミーテキストがここに入ります。</p>
       </li>
-      <li class="why__item">
-        <span class="why__num">02</span>
-        <p class="why__text">求職者は待遇だけでなく「働く環境」や「価値観の一致」を重視している</p>
+      <li class="business__item">
+        <img class="ico" src="assets/icons/trending-up.svg" alt="" width="48" height="48">
+        <h3>ダミー事業タイトル</h3>
+        <p>ダミーテキストがここに入ります。<br>ダミーテキストがここに入ります。</p>
       </li>
-      <li class="why__item">
-        <span class="why__num">03</span>
-        <p class="why__text">条件だけで比較されると、大手企業との勝負を避けられない</p>
+      <li class="business__item">
+        <img class="ico" src="assets/icons/globe.svg" alt="" width="48" height="48">
+        <h3>ダミー事業タイトル</h3>
+        <p>ダミーテキストがここに入ります。<br>ダミーテキストがここに入ります。</p>
       </li>
-    </ol>
-    <p class="why__conclusion">「選ばれる会社」になるためには、<mark>採用ブランディングが不可欠</mark>。</p>
+    </ul>
   </div>
 </section>
 
-<!-- ============ merit ============ -->
-<section class="merit section" data-module="merit">
-  <div class="container">
-    <h2 class="section__title">採用ブランディングのメリット</h2>
-    <p class="section__lead">自社の魅力と働く環境を言語化し、「この会社で働きたい」と思ってもらうための取り組みです。</p>
-    <div class="merit__box">
-      <div class="merit__body">
-        <h3 class="merit__heading">採用ブランディングの効果</h3>
-        <ul class="merit__list">
-          <li><img src="assets/icons/check.svg" alt="" width="20" height="20">企業認知度・理解度の向上</li>
-          <li><img src="assets/icons/check.svg" alt="" width="20" height="20">「選ばれる会社」への成長</li>
-          <li><img src="assets/icons/check.svg" alt="" width="20" height="20">応募数アップ・マッチした人材の獲得</li>
-          <li><img src="assets/icons/check.svg" alt="" width="20" height="20">内定辞退の減少</li>
-          <li><img src="assets/icons/check.svg" alt="" width="20" height="20">定着率の改善</li>
-        </ul>
-      </div>
-      <div class="merit__visual">
-        <img src="assets/illustrations/merit-screening.svg" alt="応募者の見極めイメージ" width="460" height="340" loading="lazy">
-      </div>
+<!-- ===== PEOPLE ===== -->
+<section class="people" id="people">
+  <div class="people__inner">
+    <div class="people__head">
+      <p class="label"><span class="label__line" aria-hidden="true"></span>PEOPLE</p>
+      <h2 class="sec-title">人を知る</h2>
+      <p class="sec-text">ダミーテキストがここに入ります。<br>さまざまなバックグラウンドや価値観を持ち、<br>それぞれの想いと挑戦に、日々向き合っています。</p>
+      <a class="more" href="#"><span class="more__circle" aria-hidden="true">→</span>詳しく見る</a>
+    </div>
+    <div class="people__media">
+      <img src="assets/img/people.svg" alt="">
+      <span class="people__silhouette" aria-hidden="true">
+        <svg viewBox="0 0 420 200" preserveAspectRatio="xMidYMax meet">
+          <g fill="#ffffff" opacity=".55">
+            <path d="M92 200V118c0-14 8-22 18-22s18 8 18 22v82z"/><circle cx="110" cy="84" r="14"/>
+            <path d="M158 200V128c0-13 7-20 16-20s16 7 16 20v72z"/><circle cx="174" cy="96" r="12"/>
+            <path d="M222 200V126c0-13 7-20 16-20s16 7 16 20v74z"/><circle cx="238" cy="94" r="12"/>
+            <path d="M286 200V120c0-14 8-22 18-22s18 8 18 22v80z"/><circle cx="304" cy="86" r="14"/>
+          </g>
+        </svg>
+      </span>
     </div>
   </div>
 </section>
 
-<!-- ============ cta-band ============ -->
-<section class="cta-band" data-module="cta-band">
-  <div class="container">
-    <p class="cta-band__label">＼ 採用ブランディングの基礎を知りたい方はこちら ／</p>
-    <a class="btn btn--cta btn--lg" href="#download">
-      <img src="assets/icons/book-open.svg" alt="" width="20" height="20" class="btn__icon">資料をダウンロード
-    </a>
-  </div>
-</section>
-
-<!-- ============ strength ============ -->
-<section class="strength section" id="strength" data-module="strength">
-  <div class="container">
-    <h2 class="section__title">サンプル製作所の採用ブランディングの強み</h2>
-    <div class="strength__list">
-      <article class="strength__card">
-        <div class="strength__visual"><img src="assets/illustrations/point-teams.svg" alt="" width="420" height="300" loading="lazy"></div>
-        <div class="strength__body">
-          <span class="strength__badge">POINT 01</span>
-          <h3 class="strength__heading">戦略から運用まで、一気通貫で支援</h3>
-          <p class="strength__text">ターゲット設定、メディアプラン、クリエイティブ制作、公開後の効果測定までを社内で完結。窓口が分かれないため、施策の意図がぶれずに最後まで届きます。</p>
-        </div>
-      </article>
-      <article class="strength__card strength__card--rev">
-        <div class="strength__visual"><img src="assets/illustrations/point-growth.svg" alt="" width="420" height="300" loading="lazy"></div>
-        <div class="strength__body">
-          <span class="strength__badge">POINT 02</span>
-          <h3 class="strength__heading">数値で語れる採用成果</h3>
-          <p class="strength__text">応募数・エントリー率・辞退率をKPIとして設計し、月次で可視化。感覚ではなくデータで次の打ち手を決められる体制をつくります。</p>
-          <ul class="strength__stats">
-            <li><span class="strength__stat-num">1.9<small>倍</small></span>応募数</li>
-            <li><span class="strength__stat-num">40<small>%減</small></span>内定辞退</li>
-          </ul>
-        </div>
-      </article>
-      <article class="strength__card">
-        <div class="strength__visual"><img src="assets/illustrations/point-plan.svg" alt="" width="420" height="300" loading="lazy"></div>
-        <div class="strength__body">
-          <span class="strength__badge">POINT 03</span>
-          <h3 class="strength__heading">課題に合わせた独自のプランニング</h3>
-          <p class="strength__text">Web・紙・イベントなど手段を固定せず、貴社の採用課題と予算に合わせて最適な組み合わせを設計。「まず何から」が明確になります。</p>
-        </div>
-      </article>
+<!-- ===== ENVIRONMENT ===== -->
+<section class="env" id="env">
+  <div class="env__inner">
+    <div class="env__head">
+      <p class="label label--light"><span class="label__line" aria-hidden="true"></span>ENVIRONMENT</p>
+      <h2 class="sec-title sec-title--light">働く環境</h2>
+      <p class="sec-text sec-text--light">ダミーテキストがここに入ります。<br>一人ひとりが自分らしく力を発揮できるよう、<br>多様で柔軟な制度や文化を大切にしています。</p>
+      <a class="more more--light" href="#"><span class="more__circle" aria-hidden="true">→</span>詳しく見る</a>
     </div>
-  </div>
-</section>
-
-<!-- ============ plan ============ -->
-<section class="plan section" id="plan" data-module="plan">
-  <div class="container">
-    <h2 class="section__title section__title--light">目的に応じて最適なプランをご提案</h2>
-    <div class="plan__grid">
-      <article class="plan__card">
-        <h3 class="plan__heading"><span>企業認知度向上！</span>採用ブランディング広告</h3>
-        <p class="plan__text">まずは知ってもらう段階の企業向け。ターゲットに合わせた媒体を選定し、効率的に接触機会をつくります。</p>
-        <a class="btn btn--cta" href="#download">プラン資料をダウンロード</a>
-      </article>
-      <article class="plan__card">
-        <h3 class="plan__heading"><span>新卒採用に今すぐ効く！</span>ターゲティング配信プラン</h3>
-        <p class="plan__text">学生・若手層に絞った配信設計。狙った層へピンポイントに届け、母集団形成を短期間で立ち上げます。</p>
-        <a class="btn btn--cta" href="#download">プラン資料をダウンロード</a>
-      </article>
-    </div>
-    <p class="plan__note">上記以外のプランも、貴社の課題に合わせてご提案可能です。お気軽にご相談ください。</p>
-  </div>
-</section>
-
-<!-- ============ flow ============ -->
-<section class="flow section" id="flow" data-module="flow">
-  <div class="container">
-    <h2 class="section__title">ご相談の流れ</h2>
-    <ol class="flow__steps">
-      <li class="flow__step">
-        <span class="flow__num">STEP 01</span>
-        <div class="flow__icon"><img src="assets/icons/mail.svg" alt="" width="28" height="28"></div>
-        <h3 class="flow__heading">お問い合わせ</h3>
+    <ul class="env__grid">
+      <li class="env__item">
+        <img class="ico" src="assets/icons/heart.svg" alt="" width="36" height="36">
+        <div><h3>ダミータイトル</h3><p>ダミーテキストがここに入ります。<br>ダミーテキストがここに入ります。</p></div>
       </li>
-      <li class="flow__step">
-        <span class="flow__num">STEP 02</span>
-        <div class="flow__icon"><img src="assets/icons/message-circle.svg" alt="" width="28" height="28"></div>
-        <h3 class="flow__heading">ご相談・ご検討</h3>
+      <li class="env__item">
+        <img class="ico" src="assets/icons/book-open.svg" alt="" width="36" height="36">
+        <div><h3>ダミータイトル</h3><p>ダミーテキストがここに入ります。<br>ダミーテキストがここに入ります。</p></div>
       </li>
-      <li class="flow__step">
-        <span class="flow__num">STEP 03</span>
-        <div class="flow__icon"><img src="assets/icons/lightbulb.svg" alt="" width="28" height="28"></div>
-        <h3 class="flow__heading">ご提案</h3>
+      <li class="env__item">
+        <img class="ico" src="assets/icons/users.svg" alt="" width="36" height="36">
+        <div><h3>ダミータイトル</h3><p>ダミーテキストがここに入ります。<br>ダミーテキストがここに入ります。</p></div>
       </li>
-      <li class="flow__step">
-        <span class="flow__num">STEP 04</span>
-        <div class="flow__icon"><img src="assets/icons/handshake.svg" alt="" width="28" height="28"></div>
-        <h3 class="flow__heading">ご契約・施策実施</h3>
+      <li class="env__item">
+        <img class="ico" src="assets/icons/calendar.svg" alt="" width="36" height="36">
+        <div><h3>ダミータイトル</h3><p>ダミーテキストがここに入ります。<br>ダミーテキストがここに入ります。</p></div>
       </li>
-    </ol>
-    <p class="flow__note">お問い合わせ内容を確認後、担当者よりご連絡いたします。<br class="u-pc-only">貴社の課題を伺ったうえで、施策をご提案いたします。</p>
-    <div class="flow__action"><a class="btn btn--outline btn--lg" href="#cta">お問い合わせ</a></div>
+    </ul>
   </div>
 </section>
 
-<!-- ============ download ============ -->
-<section class="download section" id="download" data-module="download">
-  <div class="container">
-    <h2 class="section__title">資料ダウンロード</h2>
-    <div class="download__grid">
-      <article class="download__card">
-        <div class="download__thumb"><img src="assets/illustrations/doc-01.svg" alt="" width="320" height="220" loading="lazy"></div>
-        <h3 class="download__heading">採用ブランディング<br>はじめてガイド</h3>
-        <p class="download__text">基礎から知りたい方はこちら</p>
-        <a class="btn btn--cta btn--sm" href="#cta">ダウンロード</a>
-      </article>
-      <article class="download__card">
-        <div class="download__thumb"><img src="assets/illustrations/doc-02.svg" alt="" width="320" height="220" loading="lazy"></div>
-        <h3 class="download__heading">採用プロモーション<br>メディア選定ガイド</h3>
-        <p class="download__text">媒体選びで迷っている方へ</p>
-        <a class="btn btn--cta btn--sm" href="#cta">ダウンロード</a>
-      </article>
-      <article class="download__card">
-        <div class="download__thumb"><img src="assets/illustrations/doc-03.svg" alt="" width="320" height="220" loading="lazy"></div>
-        <h3 class="download__heading">採用サイト<br>制作チェックリスト</h3>
-        <p class="download__text">公開前の確認項目をまとめました</p>
-        <a class="btn btn--cta btn--sm" href="#cta">ダウンロード</a>
-      </article>
+<!-- ===== ENTRY ===== -->
+<section class="entry" id="entry">
+  <div class="entry__inner">
+    <div class="entry__lead">
+      <p class="label label--light"><span class="label__line" aria-hidden="true"></span>ENTRY</p>
+      <h2 class="entry__title">エントリーはこちら</h2>
     </div>
-  </div>
-</section>
-
-<!-- ============ column ============ -->
-<section class="column section" data-module="column">
-  <div class="container">
-    <h2 class="section__title">おすすめコラム</h2>
-    <div class="column__grid">
-      <article class="column__card">
-        <div class="column__thumb column__thumb--a"><span>採用サイトの集客</span></div>
-        <p class="column__meta">採用ブランディング</p>
-        <h3 class="column__heading">【採用サイト集客】アクセスを増やす3つのチャネル</h3>
-        <time class="column__date" datetime="2026-06-11">2026-06-11</time>
-      </article>
-      <article class="column__card">
-        <div class="column__thumb column__thumb--b"><span>インターンシップ</span></div>
-        <p class="column__meta">新卒採用</p>
-        <h3 class="column__heading">【インターンシップ募集方法】学生に響く設計とは</h3>
-        <time class="column__date" datetime="2026-05-14">2026-05-14</time>
-      </article>
-      <article class="column__card">
-        <div class="column__thumb column__thumb--c"><span>地方採用</span></div>
-        <p class="column__meta">中途採用</p>
-        <h3 class="column__heading">【地方採用】人口減少時代に企業が取るべき採用戦略</h3>
-        <time class="column__date" datetime="2026-03-27">2026-03-27</time>
-      </article>
-    </div>
-    <div class="column__action"><a class="btn btn--outline" href="#">コラム一覧へ</a></div>
-  </div>
-</section>
-
-<!-- ============ cta ============ -->
-<section class="cta" id="cta" data-module="cta">
-  <div class="container">
-    <h2 class="cta__title">まずは、資料をご覧ください。</h2>
-    <p class="cta__lead">採用ブランディングの考え方と進め方を、3分で読める資料にまとめています。</p>
-    <div class="cta__actions">
-      <a class="btn btn--cta btn--lg" href="#" aria-disabled="true">
-        <img src="assets/icons/book-open.svg" alt="" width="20" height="20" class="btn__icon">資料をダウンロード
-      </a>
-      <a class="btn btn--outline-light btn--lg" href="#" aria-disabled="true">お問い合わせ</a>
-    </div>
-    <p class="cta__note">※ 本ページはワークショップ用のサンプルです。フォームは設置していません。</p>
+    <p class="entry__text">ダミーテキストがここに入ります。<br>ダミーテキストがここに入ります。</p>
+    <a class="entry__btn" href="#" aria-label="エントリーする"><span aria-hidden="true">→</span></a>
   </div>
 </section>
 
 </main>
 
-<footer class="footer">
-  <div class="container">
-    <ul class="footer__nav">
-      <li><a href="#top">TOP</a></li>
-      <li><a href="#why">お悩み別ソリューション</a></li>
-      <li><a href="#strength">私たちの強み</a></li>
-      <li><a href="#download">お役立ち資料</a></li>
-      <li><a href="#flow">ご相談の流れ</a></li>
-      <li><a href="#">個人情報の取り扱いについて</a></li>
-    </ul>
-    <div class="footer__brand">
-      <span class="footer__logo">サンプル製作所</span>
-      <span class="footer__logo-sub">RECRUIT BRANDING</span>
+<footer class="ftr">
+  <div class="ftr__nav">
+    <div class="ftr__col">
+      <h3>採用情報</h3>
+      <ul><li><a href="#top">トップ</a></li><li><a href="#business">仕事を知る</a></li><li><a href="#people">人を知る</a></li><li><a href="#env">働く環境</a></li><li><a href="#entry">募集職種</a></li></ul>
     </div>
-    <p class="footer__copy">&copy; SAMPLE SEISAKUSHO Inc. All rights reserved.</p>
-    <p class="footer__note">本ページはワークショップ用のサンプルです。記載の社名・数値・実績はすべて架空のものです。</p>
+    <div class="ftr__col">
+      <h3>会社について</h3>
+      <ul><li><a href="#">メッセージ</a></li><li><a href="#">事業紹介</a></li><li><a href="#">ニュース</a></li><li><a href="#">サステナビリティ</a></li></ul>
+    </div>
+    <div class="ftr__col">
+      <h3>はたらく環境</h3>
+      <ul><li><a href="#">制度・福利厚生</a></li><li><a href="#">教育・研修</a></li><li><a href="#">よくある質問</a></li></ul>
+    </div>
+    <div class="ftr__col">
+      <h3>エントリー</h3>
+      <ul><li><a href="#">新卒採用</a></li><li><a href="#">キャリア採用</a></li></ul>
+    </div>
+    <div class="ftr__col">
+      <h3>SNS</h3>
+      <ul class="ftr__sns">
+        <li><a href="#" aria-label="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4l7.5 9.6L4.4 20h2.1l5.9-6.3 4.9 6.3H20l-7.8-10 6.7-6h-2.1l-5.5 5.9L6.4 4z" fill="currentColor"/></svg></a></li>
+        <li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.9" r="1.1" fill="currentColor"/></svg></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ftr__bottom">
+    <span class="ftr__logo">SAMPLE INC.</span>
+    <ul class="ftr__links"><li><a href="#">プライバシーポリシー</a></li><li><a href="#">サイトのご利用にあたって</a></li></ul>
+    <small class="ftr__copy">&copy; SAMPLE, INC. All Rights Reserved.</small>
   </div>
 </footer>
 

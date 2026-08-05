@@ -1,23 +1,14 @@
-/* script.js｜採用LPテンプレート
-   依存ライブラリなし。機能: ①ハンバーガーメニュー ②メニュー選択後に自動クローズ */
+/* script.js｜SAMPLE INC. 採用サイト
+   依存なし。機能: ハンバーガーメニュー開閉 */
 (function () {
   "use strict";
-
-  var toggle = document.querySelector(".header__toggle");
-  var nav = document.querySelector(".header__nav");
-  if (!toggle || !nav) return;
-
-  function setMenu(open) {
-    toggle.setAttribute("aria-expanded", String(open));
-    toggle.setAttribute("aria-label", open ? "メニューを閉じる" : "メニューを開く");
-    nav.classList.toggle("is-open", open);
+  var t = document.querySelector(".hdr__toggle"), n = document.querySelector(".hdr__nav");
+  if (!t || !n) return;
+  function set(open){
+    t.setAttribute("aria-expanded", String(open));
+    t.setAttribute("aria-label", open ? "メニューを閉じる" : "メニューを開く");
+    n.classList.toggle("is-open", open);
   }
-
-  toggle.addEventListener("click", function () {
-    setMenu(toggle.getAttribute("aria-expanded") !== "true");
-  });
-
-  nav.addEventListener("click", function (e) {
-    if (e.target.closest("a")) setMenu(false);
-  });
+  t.addEventListener("click", function(){ set(t.getAttribute("aria-expanded") !== "true"); });
+  n.addEventListener("click", function(e){ if (e.target.closest("a")) set(false); });
 })();
