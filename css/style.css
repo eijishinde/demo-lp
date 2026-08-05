@@ -12,10 +12,11 @@
   --gray:#F4F5F5;
   --line:#E2E5E4;
   --white:#fff;
-  /* 和文: Mac=ヒラギノ / Win=游ゴシック / fallback=Noto。日本のコーポレートサイト標準の組み */
-  --font:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic Medium","游ゴシック Medium",YuGothic,"游ゴシック体","Noto Sans JP","Noto Sans CJK JP",Meiryo,sans-serif;
-  /* 欧文: ラベル・ロゴ用 */
-  --font-en:"Helvetica Neue",Helvetica,Arial,"Hiragino Sans",sans-serif;
+  /* 和文: Noto Sans JP(Webフォント)。全環境で同じ字面にするため先頭に置く。
+     読み込み失敗時のみ ヒラギノ→游ゴシック→Noto CJK にフォールバック */
+  --font:"Noto Sans JP","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic Medium","游ゴシック Medium",YuGothic,"Noto Sans CJK JP",Meiryo,sans-serif;
+  /* 欧文: ラベル・ロゴ用。Noto Sans JP のラテンは字幅が広いため別指定 */
+  --font-en:"Helvetica Neue",Helvetica,Arial,"Noto Sans JP",sans-serif;
   --hdr-h:72px;
 }
 *,*::before,*::after{box-sizing:border-box}

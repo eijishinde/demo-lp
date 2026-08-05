@@ -21,15 +21,17 @@
 
 ## フォント方針
 
-Webフォントは使用せず、システムフォント優先のスタックを採用(日本のコーポレートサイト標準)。
+**Noto Sans JP(Google Fonts)を全環境で使用。** 閲覧環境によって字面や折り返し位置が変わるのを防ぐため、
+システムフォント方式ではなくWebフォントを採用している。
 
 ```
-Mac  → Hiragino Sans(ヒラギノ角ゴ)
-Win  → Yu Gothic Medium(游ゴシック)
-その他 → Noto Sans JP / Noto Sans CJK JP
+第一候補   Noto Sans JP(Webフォント / wght 300・400・500・700)
+フォールバック Hiragino Sans → Yu Gothic Medium → Noto Sans CJK JP → Meiryo
 ```
 
-- 読み込み待ちがなく表示が速い / 環境ごとに最も自然な字面になる
+- `display=swap` により読み込み中も文字が消えない(白抜けなし)
+- `preconnect` で接続を先行させ、切り替わりの体感を最小化
+- フォールバックは読み込み失敗時の保険。削除しないこと
 - 和文見出しは `letter-spacing: .2em` + `font-feature-settings:"palt" 0`(ベタ組み)で字間を効かせる
 - 本文は `"palt" 1`(詰め組み)で読みやすさを優先
 - 欧文ラベル(BUSINESS 等)は `--font-en` で Helvetica/Arial 系を指定

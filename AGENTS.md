@@ -23,7 +23,7 @@ assets/img/         写真プレースホルダー(差し替え前提)
 
 - HTML、CSS、JavaScript のみを使用する
 - React、Vue、Vite、Node.js、npm、jQuery、外部CDN、外部ライブラリは**一切使用しない**
-- Webフォントを読み込まない(システムフォント方針。詳細は §4)
+- Webフォントは **Noto Sans JP(Google Fonts)のみ**。他のフォントを追加読み込みしない(詳細は §4)
 - エントリーファイルは `index.html`、CSSは `css/style.css`、JSは `js/script.js` のみ
 - 新しいCSS/JSファイルを増やさない
 - モバイルファースト。ブレイクポイントは **768px / 1024px** のみ使用する
@@ -77,7 +77,12 @@ assets/img/         写真プレースホルダー(差し替え前提)
 
 ## 4. タイポグラフィ(重要)
 
-Webフォントは使わない。システムフォント優先のスタックを `--font` / `--font-en` に定義済み。
+**Noto Sans JP(Google Fonts)を全環境で使用する。** 環境依存で字面が変わるのを避けるための方針。
+
+- 読み込みは `index.html` の `<head>`。`display=swap` + `preconnect` 済み
+- ウェイトは **300 / 400 / 500 / 700 のみ**。これ以外を使わない(追加読み込みが発生するため)
+- `--font` のフォールバック(ヒラギノ→游ゴシック→Noto CJK)は**読み込み失敗時の保険**。削除しない
+- 別のWebフォントを追加しない。フォントを変えたい場合は `--font` の先頭を差し替えるのみ
 
 - **和文見出し**(`.sec-title` `.hero__title` `.msg__title` `.entry__title`)
   - `font-weight: 400`、`letter-spacing: .14〜.2em`、`font-feature-settings:"palt" 0`(ベタ組み)
